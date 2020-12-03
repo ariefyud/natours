@@ -1,0 +1,83 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ORDER: base + typography > general layout + grid > components
+// MEDIA QUERIES
+// Large desktops
+@mixin lgd {
+  @media only screen and (min-width: #{$screen-lgd-min}) {
+    @content;
+  }
+}
+// Small desktops
+@mixin smd {
+  @media only screen and (max-width: #{$screen-smd-max}) {
+    @content;
+  }
+}
+// Large tablets
+@mixin lgt {
+  @media only screen and (max-width: #{$screen-lgt-max}) {
+    @content;
+  }
+}
+// Small tablets
+@mixin smt {
+  @media only screen and (max-width: #{$screen-smt-max}) {
+    @content;
+  }
+}
+// Large phones
+@mixin lgp {
+  @media only screen and (max-width: #{$screen-lgp-max}) {
+    @content;
+  }
+}
+// Small phones
+@mixin smp {
+  @media only screen and (max-width: #{$screen-smp-max}) {
+    @content;
+  }
+}
+
+// OTHER METHOD
+// 0 - 600px:    Smartphone
+// 600 - 900px:  Tablet portrait
+// 900 - 1200px: Tablet landscape
+// [1200 - 1800] is where our normal styles apply
+// 1800px + :    Extra large devices
+
+// $breakpoint argument choices:
+// - phone
+// - tab-port
+// - tab-land
+// - xl
+
+// 1em = 16px
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == xl {
+//     @media (min-width: 112.5em) { @content }; //1800px
+//   }
+//   @if $breakpoint == tab-land {
+//     @media (max-width: 75em) { @content };  //1200px
+//   }
+//   @if $breakpoint == tab-port {
+//     @media (max-width: 56.25em) { @content }; //900px
+//   }
+//   @if $breakpoint == phone {
+//     @media (max-width: 37.5em) { @content };  //600px
+//   }
+// }

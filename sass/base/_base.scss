@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+
+  // Large desktops
+  @include lgd {
+    font-size: 75%;
+  }
+  // Small desktops
+  @include smd {
+    font-size: 56.25%;
+  }
+  // Large tablets
+  @include lgt {
+    font-size: 50%;
+  }
+  // Small tablets
+  @include smt {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  // Small tablets
+  @include smt {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

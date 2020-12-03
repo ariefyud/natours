@@ -1,0 +1,46 @@
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+$default-font-size: 1.5rem;
+
+// GRID
+$grid-width: 114rem;
+$grid-width-2: 100rem;
+$grid-width-3: 100rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// MEDIA QUERIES
+// Large desktops
+$screen-lgd-min: 1800px;
+// Small desktops
+$screen-smd-max: 1255px;
+// Large tablets
+$screen-lgt-max: 992px;
+// Small tablets
+$screen-smt-max: 768px;
+// Large phones
+$screen-lgp-max: 576px;
+// Small phones
+$screen-smp-max: 375px;
+
