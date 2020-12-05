@@ -1,5 +1,5 @@
 1. npm init
 2. npm install
-3. npm install node-sass --sav-dev
+3. npm install node-sass --save-dev
 HOW TO RUN
-1. npm run compile:sass (script name)
+1. npm run start (script name)
